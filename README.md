@@ -6,12 +6,11 @@
 
 ├── main.py                 main programe
 ├── KPI.py                  evaluation 
-├── dataset.py              讀取訓練驗證資料
-├── model.py                網路架構
+
 
 
 ├── utils
-|    ├── csv_utils          csv process
+|    ├── csv_utils          csv process, generate total csv
 |    ├── dir_utils          direction process
 
 ```  
