@@ -15,3 +15,10 @@
 
 ```  
 
+
+## Quick Run
+To test the program, run
+```
+python main.py
+```
+
