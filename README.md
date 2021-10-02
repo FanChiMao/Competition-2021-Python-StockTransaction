@@ -10,7 +10,7 @@
 
 
 ├── utils
-|    ├── csv_utils          csv process, generate total csv
+|    ├── csv_utils          csv process
 |    ├── dir_utils          direction process
 
 ```  
