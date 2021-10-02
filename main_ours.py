@@ -34,6 +34,7 @@ if __name__ == '__main__':
 
             base_price = data[0][2]
 
+            # 做多
             assert BS == 0  # 檢查每一天開始是否手上都沒股票
             for i, each in enumerate(tqdm(data, ncols=50), 0):
                 Time = each[0]
