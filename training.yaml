@@ -1,0 +1,11 @@
+TRAINING:
+  Network: 'MLP_stock_predict' # folder name of model
+  EPOCH: 1000
+  LR: 0.01
+  LR_MIN: 0.005
+  GPU: true
+  BATCH: 64
+  VAL_RATE: 0.8  # split validation set from training set
+  VAL_AFTER_EVERY: 1  # save the model per ? epoch
+  TRAIN_DIR: './2330_data/2330_total.csv'  # path to training data
+  SAVE_DIR: './checkpoints'  # path to save models and images
