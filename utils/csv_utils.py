@@ -18,8 +18,19 @@ def combine_all_csv(csv_path=None, save_path=None, save_name='total_data'):
     f.close()
 
 
+def csv2csv(csv_path=None, save_path=None, save_name=None):
+    with open(save_path + '/' + save_name, 'w', newline='') as f:
+        w = csv.writer(f)
+        data = pd.read_csv(csv_path + save_name)
+        data = data.iloc[:, :].values
+        for i, each in enumerate(tqdm(data)):
+            w.writerow(*data[i])
+    f.close()
+
+
 if __name__ == '__main__':
-    wantTransCsvPath = '../StockData/'
-    saveCsvPath = '../'
+    wantTransCsvPath = '../2330_data/'
+    saveCsvPath = '../2330_data/'
     save_name = 'total_data'
-    combine_all_csv(csv_path=wantTransCsvPath, save_path=saveCsvPath, save_name=save_name)
+    csv2csv(csv_path=wantTransCsvPath, save_path=saveCsvPath, save_name='2330_total.csv')
+    # combine_all_csv(csv_path=wantTransCsvPath, save_path=saveCsvPath, save_name=save_name)
