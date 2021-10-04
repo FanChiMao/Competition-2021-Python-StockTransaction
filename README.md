@@ -24,10 +24,13 @@ Here is an example to perform 2330.TW:
 python main.py --product '2330' --stop_loss_rate 0.03 --finish_time '103000000000' --QTY 1
 ```
 
-## Strategy  
+## Predict strategy  
 Calculate 1, 5 and 20 days average prices to find Golden cross, Death cross  
 - Golden cross (a20 < a5 < a1): Long  
 - Death cross (a20 > a5 > a1): Short
+
+## Buy, Sell strategy  
+
 
 
 
