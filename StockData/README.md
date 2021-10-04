@@ -1,6 +1,6 @@
 # Stock csv data：[download](https://drive.google.com/drive/folders/12VjNtV5yx8lzX3hfzeUSFT2esSke1H3V?usp=sharing)  
 
-## csv format: 
+## Csv data format: 
 
 | Time 時間   | Product 商品代碼 | Price 成交價 | Volume 成交量 | Cumulative volume 累積成交量 |
 | :--------: | :----:          |:----:        |:----:         |:----:                       |
