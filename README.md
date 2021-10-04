@@ -10,11 +10,18 @@
 
 ```  
 
-
 ## Quick Run
 To test the program, run
 ```
 python main.py
+```
+To set the parameters in main, run
+```
+python main.py --product product_name --stop_loss_rate stop_loss_rate --finish_time time(HHMMSSffffff) --QTY quantity
+```
+Here is an example to perform 2330.TW:
+```
+python main.py --product '2330' --stop_loss_rate 0.03 --finish_time '103000000000' --QTY 1
 ```
 
 ## Strategy  
