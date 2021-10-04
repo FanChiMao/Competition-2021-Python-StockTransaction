@@ -29,15 +29,15 @@ Calculate 1, 5 and 20 days average prices to find Golden cross, Death cross
 
 ## Buy, Sell strategy  
 ```
-if BS == 0:  # 手上沒股票
-    cost = 0
-    profit = 0
-else:  # 手上有股票，計算利潤
-    # 利潤 = 價差 - 成本(手續費+交易稅)
-    profit = (float(Price) - float(open_price)) * 1000 * args.QTY - \
-             (round(float(Price) * 1000 * (args.tax_rate + args.handling_fee) * args.QTY) + cost)
+    if BS == 0:  # 手上沒股票
+        cost = 0
+        profit = 0
+    else:  # 手上有股票，計算利潤
+        # 利潤 = 價差 - 成本(手續費+交易稅)
+        profit = (float(Price) - float(open_price)) * 1000 * args.QTY - \
+                 (round(float(Price) * 1000 * (args.tax_rate + args.handling_fee) * args.QTY) + cost)
 
-# 手中沒股票，且在門檻時間以前。 若價格小於基礎價格買入。
+    # 手中沒股票，且在門檻時間以前。 若價格小於基礎價格買入。
     if Price == open_price and BS == 0 and Time < args.finish_time:
         open_price = Price
         w.writerow([args.product, 'B', Date, str(Time), Price, args.QTY, ])
