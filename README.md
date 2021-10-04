@@ -38,34 +38,34 @@ else:  # 手上有股票，計算利潤
              (round(float(Price) * 1000 * (args.tax_rate + args.handling_fee) * args.QTY) + cost)
 
 # 手中沒股票，且在門檻時間以前。 若價格小於基礎價格買入。
-if Price == open_price and BS == 0 and Time < args.finish_time:
-    open_price = Price
-    w.writerow([args.product, 'B', Date, str(Time), Price, args.QTY, ])
-    cost = round(float(Price) * 1000 * args.handling_fee * args.QTY)  # 買入成本
-    BS = BS + 1
+    if Price == open_price and BS == 0 and Time < args.finish_time:
+        open_price = Price
+        w.writerow([args.product, 'B', Date, str(Time), Price, args.QTY, ])
+        cost = round(float(Price) * 1000 * args.handling_fee * args.QTY)  # 買入成本
+        BS = BS + 1
 
-# 手中有股票，且在門檻時間以前。 若利潤(價差) > 0 賣出
-elif profit > 0 and BS > 0 and Time < args.finish_time:
-    w.writerow([args.product, 'S', Date, str(Time), Price, args.QTY, ])
-    BS = BS - 1
+    # 手中有股票，且在門檻時間以前。 若利潤(價差) > 0 賣出
+    elif profit > 0 and BS > 0 and Time < args.finish_time:
+        w.writerow([args.product, 'S', Date, str(Time), Price, args.QTY, ])
+        BS = BS - 1
 
-# 超過門檻時間 (價格浮動期)，且還未平倉，找後面時間有利潤 > 0的賣出。 結束今天買賣
-elif profit > 0 and BS > 0 and Time >= args.finish_time:
-    w.writerow([args.product, 'S', Date, str(Time), Price, args.QTY, ])
-    BS = BS - 1
-    # break
+    # 超過門檻時間 (價格浮動期)，且還未平倉，找後面時間有利潤 > 0的賣出。 結束今天買賣
+    elif profit > 0 and BS > 0 and Time >= args.finish_time:
+        w.writerow([args.product, 'S', Date, str(Time), Price, args.QTY, ])
+        BS = BS - 1
+        # break
 
-# 超過門檻時間 (價格浮動期)，且還未平倉，並到達停損點，趕快賣出。 結束今天買賣
-elif 0 > profit and float(Price) < float(open_price) * args.stop_loss_rate and BS > 0 \
-        and Time >= args.finish_time:
-    w.writerow([args.product, 'S', Date, str(Time), Price, args.QTY, ])
-    BS = BS - 1
+    # 超過門檻時間 (價格浮動期)，且還未平倉，並到達停損點，趕快賣出。 結束今天買賣
+    elif 0 > profit and float(Price) < float(open_price) * args.stop_loss_rate and BS > 0 \
+            and Time >= args.finish_time:
+        w.writerow([args.product, 'S', Date, str(Time), Price, args.QTY, ])
+        BS = BS - 1
 
-# 超過門檻時間 (價格浮動期)，且還未平倉，以收盤價賣出。 結束今天買賣
-elif BS > 0 and Time == data[len(data) - 1][0]:
-    close = data[len(data) - 1][2]
-    w.writerow([args.product, 'S', Date, str(Time), close, args.QTY, ])
-    BS = 0
+    # 超過門檻時間 (價格浮動期)，且還未平倉，以收盤價賣出。 結束今天買賣
+    elif BS > 0 and Time == data[len(data) - 1][0]:
+        close = data[len(data) - 1][2]
+        w.writerow([args.product, 'S', Date, str(Time), close, args.QTY, ])
+        BS = 0
 ```
 
 ## KPI (evaluation)  
