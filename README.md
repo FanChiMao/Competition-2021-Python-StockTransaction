@@ -5,13 +5,8 @@
 └── README.md 
 
 ├── main.py                 main programe
-├── KPI.py                  evaluation 
+└── KPI.py                  evaluation 
 
-
-
-├── utils
-|    ├── csv_utils          csv process
-|    ├── dir_utils          direction process
 
 ```  
 
