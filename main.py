@@ -136,7 +136,7 @@ if __name__ == '__main__':
                     # 超過門檻時間 (價格浮動期)，且還未平倉，並到達停損點，趕快買入。 結束今天買賣
                     elif 0 > profit and float(Price) > float(open_price) * args.stop_loss_rate and BS > 0 \
                             and Time >= args.finish_time:
-                        w.writerow([args.product, 'S', Date, str(Time), Price, args.QTY, ])
+                        w.writerow([args.product, '', Date, str(Time), Price, args.QTY, ])
                         BS = BS - 1
 
                     # 超過門檻時間 (價格浮動期)，且還未平倉，以收盤價買入。 結束今天買賣
