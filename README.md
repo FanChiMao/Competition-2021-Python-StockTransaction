@@ -17,3 +17,10 @@ To test the program, run
 python main.py
 ```
 
+## Strategy  
+Calculate 1, 5 and 20 days average prices to find Golden cross, Death cross  
+- Golden cross (a20 < a5 < a1): Long  
+- Death cross (a20 > a5 > a1): Short
+
+
+
