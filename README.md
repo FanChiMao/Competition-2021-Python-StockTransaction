@@ -30,5 +30,11 @@ Calculate 1, 5 and 20 days average prices to find Golden cross, Death cross
 ## Buy, Sell strategy  
 
 
+## KPI (evaluation)  
+To evaluate the report, run `KPI.py` to get the result csv: `KPI.csv`
+```
+python KPI.py
+```
+Ours KPI result is showed bellow:
 
 
