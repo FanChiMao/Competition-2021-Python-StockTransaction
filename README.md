@@ -9,7 +9,7 @@
 ```  
 
 ## Quick Run
-To test the program, run `main.py`
+To test the program, run `main.py` to get the transaction csv `Record.csv`  
 ```
 python main.py
 ```
@@ -35,7 +35,7 @@ To evaluate the report, run `KPI.py` to get the result csv: `KPI.csv`
 ```
 python KPI.py
 ```
-Ours KPI result is showed bellow:
+Ours KPI result `KPI.csv` is showed bellow:
 | 總損益 | 總交易次數 | 平均損益 | 勝率 | 獲利因子 | 賺賠比 | 最大資金回落 | 夏普比率 | 是否超額交易 |
 | :---: | :--------: | :-----: | :-: | :------: | :---: | :---------: | :-----: | :---------: |
 |1474694| 874       | 1687.2929|0.675|3.0082    |1.4480 |600068       |0.3519   |否            |
