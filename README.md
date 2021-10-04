@@ -9,7 +9,7 @@
 ```  
 
 ## Quick Run
-To test the program, run
+To test the program, run `main.py`
 ```
 python main.py
 ```
