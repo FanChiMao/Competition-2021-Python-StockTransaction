@@ -79,8 +79,7 @@ Our KPI result `KPI.csv` is showed bellow:
 |1509853| 874       | 1727.5256|0.638|3.179    |1.801 |585472       |0.368   |否            |
 
 ## Report  
-- Preliminary written report: https://drive.google.com/file/d/1wkxdQN863TYorcstUOdHMq1jP3j1MU0g/view?usp=sharing  
-
+- Preliminary written report: [書面報告.pdf](https://drive.google.com/file/d/1wkxdQN863TYorcstUOdHMq1jP3j1MU0g/view?usp=sharing)  
 
 ## Contact us  
 If you have any question, please contact:  
