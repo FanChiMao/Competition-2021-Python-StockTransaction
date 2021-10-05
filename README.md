@@ -78,3 +78,12 @@ Our KPI result `KPI.csv` is showed bellow:
 | :---: | :--------: | :-----: | :-: | :------: | :---: | :---------: | :-----: | :---------: |
 |1474694| 874       | 1687.2929|0.675|3.0082    |1.4480 |600068       |0.3519   |否            |
 
+## Report  
+- Preliminary Written report: https://drive.google.com/file/d/1wkxdQN863TYorcstUOdHMq1jP3j1MU0g/view?usp=sharing  
+
+
+## Contact us  
+- Chi-Mao Fan: qaz5517359@gmail.com  
+- Yu-Fang Huang: lin12099@yahoo.com.tw  
+- Kai-Hua Yeh: kateyehyeh@gmail.com  
+- Wei-Xian Lion: 
