@@ -76,7 +76,7 @@ python KPI.py
 Our KPI result `KPI.csv` is showed bellow:
 | 總損益 | 總交易次數 | 平均損益 | 勝率 | 獲利因子 | 賺賠比 | 最大資金回落 | 夏普比率 | 是否超額交易 |
 | :---: | :--------: | :-----: | :-: | :------: | :---: | :---------: | :-----: | :---------: |
-|1474694| 874       | 1687.2929|0.675|3.0082    |1.4480 |600068       |0.3519   |否            |
+|1509853| 874       | 1727.5256|0.638|3.179    |1.801 |585472       |0.368   |否            |
 
 ## Report  
 - Preliminary written report: https://drive.google.com/file/d/1wkxdQN863TYorcstUOdHMq1jP3j1MU0g/view?usp=sharing  
