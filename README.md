@@ -83,6 +83,7 @@ Our KPI result `KPI.csv` is showed bellow:
 
 
 ## Contact us  
+If you have any question, please contact:  
 - Chi-Mao Fan: qaz5517359@gmail.com  
 - Yu-Fang Huang: lin12099@yahoo.com.tw  
 - Kai-Hua Yeh: kateyehyeh@gmail.com  
