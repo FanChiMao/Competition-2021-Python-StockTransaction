@@ -1,5 +1,5 @@
 # Stock_program_transaction  
-- [第四屆高雄盃程式交易競賽](https://bhuntr.com/tw/competitions/eqpkavrw0olm1wupbd)  
+- [**第四屆高雄盃程式交易競賽**](https://bhuntr.com/tw/competitions/eqpkavrw0olm1wupbd)  
 
 ```
 └── README.md 
@@ -89,4 +89,4 @@ If you have any question, please contact:
 - Wei-Hsiang Liao: zxc741852741@gmail.com  
 - Li-Chi Lan: bluepro6726abc@gmail.com  
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=FanChiMao/Stock_AICUP)  
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FFanChiMao%2FCompetition-2021-Python-StockTransaction&label=visitors&countColor=%232ccce4&style=plastic)  
